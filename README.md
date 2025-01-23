@@ -16,12 +16,13 @@ This repository contains a Python script that automates the process of generatin
 
 The script expects the input data to have the following structure:
 
-| Group  | Value  |
-|--------|--------|
-| A      | 12.5   |
-| A      | 13.0   |
-| B      | 15.2   |
-| C      | 10.8   |
+|     | Group              |   Variable 1 |   Variable 2 |   Variable 3 |  Variable 4 |   Variable 5 | 
+|----:|:------------------------|---------------:|--------------:|--------------------:|------------------:|------------------------:|
+| 139 | Alpha                |        44.275  |         0.65  |              97.048 |            13.608 |                    25   |      
+|  49 | Bravo |        29.9    |        -1.925 |              42.446 |             9.814 |                    22.3 |   
+| 142 | Danger               |        41.7    |        -1.775 |              63.246 |            12.883 |                    21.2 |             
+|  90 | Rodger               |        14.8375 |        10.775 |              40.538 |            16.588 |                    18.5 |                  
+
 
 - **Group**: Categorical variable representing the treatment or group.
 - **Value**: Numerical variable representing the measured outcome.
@@ -35,31 +36,34 @@ The script expects the input data to have the following structure:
 
 ### Input Data:
 
-| Group  | Value  |
-|--------|--------|
-| A      | 12.5   |
-| A      | 13.0   |
-| B      | 15.2   |
-| C      | 10.8   |
+|     | Group              |   Variable 1 |   Variable 2 |   Variable 3 |  Variable 4 |   Variable 5 | 
+|----:|:------------------------|---------------:|--------------:|--------------------:|------------------:|------------------------:|
+| 139 | Alpha                |        44.275  |         0.65  |              97.048 |            13.608 |                    25   |      
+|  49 | Bravo |        29.9    |        -1.925 |              42.446 |             9.814 |                    22.3 |   
+| 142 | Danger               |        41.7    |        -1.775 |              63.246 |            12.883 |                    21.2 |             
+|  90 | Rodger               |        14.8375 |        10.775 |              40.538 |            16.588 |                    18.5 |                  
 
 ### Output Results Table:
 
 ### Example Dataset:
 
-| Treatment              | Plant height         | Leaf number        | Fresh biomass (g)    | Dry biomass (g)     | Days to 1st flowering | Number of pods per plant | Number of seeds per pod | Weight of 100 seeds (g) | Yield (g)            |
-|------------------------|----------------------|--------------------|----------------------|---------------------|------------------------|--------------------------|--------------------------|--------------------------|----------------------|
-| Herbicide             | 33.96 ± 1.54 bc      | 3.06 ± 0.91 a      | 53.16 ± 1.57 c       | 8.40 ± 0.75 c       | 20.27 ± 0.72 b         | 13.11 ± 0.85 c          | 5.09 ± 0.74 a           | 37.65 ± 0.75 a          | 1621.84 ± 25.65 c    |
-| Hoeing and Weed Removal| 30.48 ± 0.93 ac      | 4.14 ± 1.23 a      | 51.81 ± 1.70 c       | 4.49 ± 1.16 b       | 21.44 ± 0.83 b         | 18.77 ± 0.49 b          | 6.17 ± 0.56 a           | 37.02 ± 0.93 a          | 1602.16 ± 62.48 c    |
-| Mulching              | 28.81 ± 0.50 a       | 4.66 ± 1.38 a      | 65.70 ± 3.63 a       | 16.62 ± 0.59 a      | 19.48 ± 1.19 b         | 22.42 ± 0.47 a          | 6.62 ± 0.68 a           | 35.18 ± 0.62 a          | 2394.25 ± 10.71 a    |
-| No Weed Management    | 36.70 ± 0.93 b       | 5.92 ± 0.63 a      | 43.16 ± 0.86 b       | 6.57 ± 0.71 bc      | 28.93 ± 1.03 a         | 7.80 ± 1.07 d           | 4.25 ± 0.95 a           | 35.16 ± 0.79 a          | 959.95 ± 39.04 b     |
-| p-value              | 0.0001***            | 0.2932ns           | 0.0000***            | 0.0000***           | 0.0000***              | 0.0000***               | 0.1453ns                | 0.0669ns                | 0.0000***            |
+| Treatment              | Variable 1         | Variable 2        | Variable 3    | Variable 4     | Variable 5 |
+|------------------------|----------------------|--------------------|----------------------|---------------------|------------------------|
+| Alpha             | 33.96 ± 1.54 bc      | 3.06 ± 0.91 a      | 53.16 ± 1.57 c       | 8.40 ± 0.75 c       | 20.27 ± 0.72 b         |
+| Bravo | 30.48 ± 0.93 ac      | 4.14 ± 1.23 a      | 51.81 ± 1.70 c       | 4.49 ± 1.16 b       | 21.44 ± 0.83 b         |
+| Danger              | 28.81 ± 0.50 a       | 4.66 ± 1.38 a      | 65.70 ± 3.63 a       | 16.62 ± 0.59 a      | 19.48 ± 1.19 b         |
+| Rodger    | 36.70 ± 0.93 b       | 5.92 ± 0.63 a      | 43.16 ± 0.86 b       | 6.57 ± 0.71 bc      | 28.93 ± 1.03 a         |
+| p-value              | 0.0001***            | 0.2932ns           | 0.0000***            | 0.0000***           | 0.0000***              |
 
 - **Interpretation**:
   - Values with different letters (e.g., `a`, `b`, `c`) in the same column indicate statistically significant differences.
   - p-values indicate the level of significance: `***` for highly significant, `ns` for not significant.
 
-### Visualization:
-A bar plot or box plot with Compact Letter Displays shown above each group.
+### Example Visualization
+
+Below is an example of the generated visualization with Compact Letter Displays:
+
+#![CLD Plot Example](Visualization(Figures)/cld_plot.png)
 
 
 ## Contributing
