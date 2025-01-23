@@ -1,4 +1,4 @@
-# Automated Compact Letter Display (CLD) Generator for ANOVA Results
+# Automated Compact Letter Display (CLD) Generator
 
 This repository contains a Python script that automates the process of generating **Compact Letter Displays (CLDs)** after performing **Analysis of Variance (ANOVA)**. The script not only performs statistical tests to detect significant differences between groups but also generates clear and interpretable results. By assigning the CLDs directly to the results table, it simplifies the interpretation of complex statistical outcomes. Furthermore, the tool creates visually appealing and publication-ready plots that integrate these displays, making it easy to interpret significant differences between groups at a glance. 
 
@@ -47,7 +47,7 @@ The script expects the input data to have the following structure:
 
 ### Output Results Table:
 
-### Example Dataset:
+### Example Outputs:
 
 | Treatment              | Variable 1         | Variable 2        | Variable 3    | Variable 4     | Variable 5 |
 |------------------------|----------------------|--------------------|----------------------|---------------------|------------------------|
