@@ -1,6 +1,8 @@
-# Automated Compact Letter Display (CLD) Generator
+# Automated Compact Letter Display (CLD) Generator for ANOVA Results
 
-This repository contains a Python script that automates the process of generating **Compact Letter Displays (CLDs)** after performing **Analysis of Variance (ANOVA)**. The script assigns the CLDs to the results table and creates plots that integrate these displays, making it easy to interpret significant differences between groups. The tool is designed to handle datasets with similar formats efficiently, saving time and ensuring accuracy.
+This repository contains a Python script that automates the process of generating **Compact Letter Displays (CLDs)** after performing **Analysis of Variance (ANOVA)**. The script not only performs statistical tests to detect significant differences between groups but also generates clear and interpretable results. By assigning the CLDs directly to the results table, it simplifies the interpretation of complex statistical outcomes. Furthermore, the tool creates visually appealing and publication-ready plots that integrate these displays, making it easy to interpret significant differences between groups at a glance. 
+
+The tool is designed to handle datasets with similar formats efficiently, ensuring both accuracy and scalability. It is particularly useful for researchers and data analysts dealing with repetitive tasks involving ANOVA across multiple datasets. By automating the generation of results and visualizations, this script saves time, minimizes human error, and provides a streamlined workflow for data analysis and presentation.
 
 ## Features
 
@@ -63,7 +65,7 @@ The script expects the input data to have the following structure:
 
 Below is an example of the generated visualization with Compact Letter Displays:
 
-#![CLD Plot Example](Visualization(Figures)/cld_plot.png)
+![CLD Plot Example](Visualization(Figures)/cld_plot.png)
 
 
 ## Contributing
@@ -78,5 +80,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- LinkedIn: [Your LinkedIn Profile](#)
-- Email: [Your Email Address](#)
+- Email: [Jabulente@hotmail.com](Jabulente@hotmail.com)
